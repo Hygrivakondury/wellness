@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith | Modern Wellness</title>
+    <meta name="description" content="A modern platform for mental and physical wellness for Millennials and Gen Z.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="ph ph-sparkle"></i>
+                <span>Zenith</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item active" data-target="home">Home</a></li>
+                <li><a href="#" class="nav-item" data-target="physical">Physical</a></li>
+                <li><a href="#" class="nav-item" data-target="mental">Mental</a></li>
+                <li><a href="#" class="nav-item" data-target="community">Community</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-outline" id="login-btn">Log In</button>
+                <button class="btn-primary">Get Started</button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="page-section active">
+                <div class="hero">
+                    <div class="hero-content">
+                        <span class="badge">Your Wellness Journey</span>
+                        <h1>Find Your Balance. <br /><span class="text-gradient">Elevate Your Life.</span></h1>
+                        <p>A holistic approach to mental clarity and physical strength, designed for the modern
+                            generation. Join a community that moves and grows together.</p>
+                        <div class="hero-actions">
+                            <button class="btn-primary btn-large">Start Exploring</button>
+                            <button class="btn-secondary btn-large">
+                                <i class="ph ph-play-circle"></i> Watch Intro
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <!-- We will add dynamic glass elements here later -->
+                        <div class="glass-card float-anim-1">
+                            <i class="ph-fill ph-barbell"></i>
+                            <div>
+                                <h4>Workout Plan</h4>
+                                <span>Day 3 / Week 1</span>
+                            </div>
+                        </div>
+                        <div class="glass-card float-anim-2">
+                            <i class="ph-fill ph-bowl-food"></i>
+                            <div>
+                                <h4>High Protein</h4>
+                                <span>120g Daily Goal</span>
+                            </div>
+                        </div>
+                        <div class="glass-card float-anim-3">
+                            <i class="ph-fill ph-users"></i>
+                            <div>
+                                <h4>Community</h4>
+                                <span>1.2k Active Now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Physical Wellness Section -->
+            <section id="physical" class="page-section hidden">
+                <div class="section-header">
+                    <h2>Physical <span class="text-gradient">Mastery</span></h2>
+                    <p>Fuel your body with proper nutrition and structured movement.</p>
+                </div>
+
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-tab="nutrition">Nutrition & Recipes</button>
+                        <button class="tab-btn" data-tab="workouts">Workout Schedules</button>
+                    </div>
+                </div>
+
+                <!-- Nutrition Context -->
+                <div id="nutrition" class="tab-content active">
+                    <div class="grid-container">
+                        <!-- Recipe Card 1 -->
+                        <div class="card recipe-card">
+                            <div class="card-image bg-gradient-1"></div>
+                            <div class="card-content">
+                                <div class="tags">
+                                    <span class="tag">High Protein</span>
+                                    <span class="tag">Breakfast</span>
+                                </div>
+                                <h3>Protein-Packed Overnight Oats</h3>
+                                <p>Start your day with sustainable energy and 35g of pure protein.</p>
+                                <div class="card-metadata">
+                                    <span><i class="ph ph-clock"></i> 5 mins</span>
+                                    <span><i class="ph ph-fire"></i> 420 kcal</span>
+                                </div>
+                                <button class="btn-outline">View Recipe</button>
+                            </div>
+                        </div>
+
+                        <!-- Recipe Card 2 -->
+                        <div class="card recipe-card">
+                            <div class="card-image bg-gradient-2"></div>
+                            <div class="card-content">
+                                <div class="tags">
+                                    <span class="tag">Low Carb</span>
+                                    <span class="tag">Dinner</span>
+                                </div>
+                                <h3>Grilled Salmon & Quinoa Bowl</h3>
+                                <p>Rich in omega-3s and complex carbs for optimal recovery.</p>
+                                <div class="card-metadata">
+                                    <span><i class="ph ph-clock"></i> 25 mins</span>
+                                    <span><i class="ph ph-fire"></i> 550 kcal</span>
+                                </div>
+                                <button class="btn-outline">View Recipe</button>
+                            </div>
+                        </div>
+
+                        <!-- Recipe Card 3 -->
+                        <div class="card recipe-card">
+                            <div class="card-image bg-gradient-3"></div>
+                            <div class="card-content">
+                                <div class="tags">
+                                    <span class="tag">Vegan</span>
+                                    <span class="tag">Snack</span>
+                                </div>
+                                <h3>Roasted Chickpea Crunch</h3>
+                                <p>The perfect savory, high-fiber snack to curb mid-day cravings.</p>
+                                <div class="card-metadata">
+                                    <span><i class="ph ph-clock"></i> 10 mins</span>
+                                    <span><i class="ph ph-fire"></i> 200 kcal</span>
+                                </div>
+                                <button class="btn-outline">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workouts Content -->
+                <div id="workouts" class="tab-content hidden">
+                    <div class="schedule-container">
+                        <div class="schedule-card active-day">
+                            <div class="day-header">
+                                <h3>Monday</h3>
+                                <span>Upper Body Push</span>
+                            </div>
+                            <ul class="exercise-list">
+                                <li>Bench Press <span>4x8</span></li>
+                                <li>Overhead Press <span>3x10</span></li>
+                                <li>Tricep Extensions <span>3x12</span></li>
+                            </ul>
+                            <button class="btn-primary w-full mt-4">Start Workout</button>
+                        </div>
+                        <div class="schedule-card">
+                            <div class="day-header">
+                                <h3>Tuesday</h3>
+                                <span>Lower Body Focus</span>
+                            </div>
+                            <ul class="exercise-list">
+                                <li>Back Squats <span>4x8</span></li>
+                                <li>Romanian Deadlifts <span>3x10</span></li>
+                                <li>Leg Press <span>3x12</span></li>
+                            </ul>
+                            <button class="btn-outline w-full mt-4">View Plan</button>
+                        </div>
+                        <div class="schedule-card">
+                            <div class="day-header">
+                                <h3>Wednesday</h3>
+                                <span>Active Recovery</span>
+                            </div>
+                            <ul class="exercise-list">
+                                <li>Light Yoga <span>20 mins</span></li>
+                                <li>Zone 2 Cardio <span>30 mins</span></li>
+                                <li>Mobility Work <span>15 mins</span></li>
+                            </ul>
+                            <button class="btn-outline w-full mt-4">View Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mental Wellness Section -->
+            <section id="mental" class="page-section hidden">
+                <div class="section-header">
+                    <h2>Inner <span class="text-gradient">Peace</span></h2>
+                    <p>Nurture your mind. Find support, read real stories, and engage in meaningful conversations.</p>
+                </div>
+
+                <div class="mental-wellness-grid">
+                    <!-- Speak to a Counselor -->
+                    <div class="glass-panel support-card">
+                        <div class="support-icon bg-gradient-2">
+                            <i class="ph ph-phone-call"></i>
+                        </div>
+                        <h3>Speak to a Counselor</h3>
+                        <p>Sometimes you just need to talk. Connect with certified professionals who understand.</p>
+
+                        <div class="confidentiality-notice">
+                            <i class="ph ph-lock-key"></i>
+                            <p><strong>100% Confidential.</strong> Your calls and user identity are kept strictly
+                                anonymous unless you choose to reveal yourself.</p>
+                        </div>
+
+                        <button class="btn-primary w-full mt-4">Connect Now</button>
+                    </div>
+
+                    <!-- Real Life Stories -->
+                    <div class="glass-panel stories-section">
+                        <h3>Real Life Stories</h3>
+                        <p class="text-muted mb-4">You are not alone. Read experiences from our community.</p>
+
+                        <div class="story-card">
+                            <div class="story-header">
+                                <div class="avatar bg-gradient-1"></div>
+                                <div>
+                                    <h4>Overcoming Burnout</h4>
+                                    <span>By Sarah T.</span>
+                                </div>
+                            </div>
+                            <p>"I hit a wall last year where even waking up felt impossible. By finding a routine and
+                                talking it out here, I found my spark again..."</p>
+                            <button class="btn-outline mt-4">Read Full Story</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dedicated Comments Section -->
+                <div class="glass-panel mental-discussion mt-4">
+                    <h3>Open Discussion</h3>
+                    <p class="text-muted mb-4">Share your thoughts on mental wellness, ask questions, or just vent. This
+                        is a safe space.</p>
+
+                    <div class="create-post-card">
+                        <div class="input-row">
+                            <div class="avatar bg-gradient-3"></div>
+                            <input type="text" placeholder="Start a new discussion thread..." class="post-input">
+                        </div>
+                        <div class="post-actions">
+                            <label class="toggle-switch">
+                                <input type="checkbox" class="anon-toggle">
+                                <span class="slider"></span>
+                                <span class="toggle-label">Post Anonymously</span>
+                            </label>
+                            <button class="btn-primary">Post Discussion</button>
+                        </div>
+                    </div>
+
+                    <div id="mental-discussions-container">
+                        <!-- Populated via JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Community Section -->
+            <section id="community" class="page-section hidden">
+                <div class="section-header">
+                    <h2>The <span class="text-gradient">Collective</span></h2>
+                    <p>Connect, share, and grow with like-minded individuals focused on mental clarity.</p>
+                </div>
+
+                <div class="feed-layout">
+                    <!-- Left Sidebar (Trending Topics) -->
+                    <aside class="sidebar">
+                        <div class="glass-panel">
+                            <h3>Trending Topics</h3>
+                            <ul class="trend-list">
+                                <li>#MindfulMornings <span class="trend-count">1.2k Posts</span></li>
+                                <li>#OvercomingAnxiety <span class="trend-count">856 Posts</span></li>
+                                <li>#MealPrepSunday <span class="trend-count">2.4k Posts</span></li>
+                                <li>#SleepHygiene <span class="trend-count">420 Posts</span></li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <!-- Main Feed -->
+                    <div class="feed-main">
+                        <!-- Create Post -->
+                        <div class="create-post-card glass-panel">
+                            <div class="input-row">
+                                <div class="avatar bg-gradient-1"></div>
+                                <input type="text" placeholder="Share your thoughts or progress..." class="post-input">
+                            </div>
+                            <div class="post-actions">
+                                <button class="action-btn"><i class="ph ph-image"></i> Photo</button>
+                                <div class="right-actions" style="display:flex; align-items:center; gap: 1rem;">
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" class="anon-toggle">
+                                        <span class="slider"></span>
+                                        <span class="toggle-label">Post Anonymously</span>
+                                    </label>
+                                    <button class="btn-primary">Post</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Posts Feed Container-->
+                        <div id="posts-container">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <i class="ph ph-sparkle"></i>
+                        <span>Zenith</span>
+                        <p class="text-muted mt-4">Elevating mental clarity and physical strength for the modern
+                            generation.</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Physical Wellness</a></li>
+                            <li><a href="#">Community Hub</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="text-muted">&copy; 2024 Zenith Wellness. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Login/Signup Modal -->
+    <div id="auth-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-panel">
+            <button class="close-modal"><i class="ph ph-x"></i></button>
+            <div class="modal-header">
+                <h2>Welcome to <span class="text-gradient">Zenith</span></h2>
+                <p class="text-muted">Sign in to join the community and save your progress.</p>
+            </div>
+
+            <div class="auth-options">
+                <button class="btn-secondary w-full google-auth">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo" class="auth-icon">
+                    Continue with Google
+                </button>
+
+                <div class="divider">
+                    <span>or sign in with email</span>
+                </div>
+
+                <form class="auth-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    <button class="btn-primary w-full" type="submit">Sign In</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <p class="text-muted">Don't have an account? <a href="#" class="text-gradient"
+                        style="font-weight:bold;">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
